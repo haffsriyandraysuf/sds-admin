@@ -1,0 +1,59 @@
+body {
+  background-color: #fff;
+  font-family: 'Montserrat',
+    sans-serif;
+}
+
+// NAVBAR
+.navbar-brand {
+  img {
+    max-height: 50px;
+  }
+}
+
+.btn-login {
+  background-color: #fff;
+  color: #014880;
+  border: 1px solid #014880;
+
+  &:hover {
+    background-color: #fff;
+    color: #014880;
+  }
+}
+
+.btn-daftar {
+  background-color: #014880;
+  color: #fff;
+
+  &:hover {
+    background-color: rgb(2, 81, 146);
+    color: #fff;
+  }
+}
+
+// HEADER
+header {
+  padding: 180px 0 250px;
+  background-image: url(../images/header-background.jpg);
+  background-size: cover;
+  background-position: 0 -50px;
+
+  h1 {
+    color: #fff;
+    font-family: 'Playfair Display',
+      serif;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .btn-get-started {
+    background-color: #FF9E53;
+    color: #fff;
+
+    &:hover {
+      background-color: #FFAA69;
+      color: #fff;
+    }
+  }
+}
