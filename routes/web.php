@@ -24,6 +24,8 @@ Route::prefix('dashboard')
       ->name('dashboard');
   });
 
+Route::get('/mastertemplates', 'CitimasterController@index');
+
 Route::get('rdct_fundmanagers/{rdct_fundmanager}/delete', 'CitifundmanagersController@destroy');
 Route::resource('rdct_fundmanagers', 'CitifundmanagersController');
 
