@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   
-  <title>Startek Admin - Dashboard</title>
+  <title>@yield('title')</title>
   
   @stack('prepend-style')
   @include('includes.admin.style')
