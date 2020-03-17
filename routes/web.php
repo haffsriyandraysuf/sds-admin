@@ -32,4 +32,7 @@ Route::resource('rdct_fundmanagers', 'CitifundmanagersController');
 Route::get('rdct_fundnames/{rdct_fundname}/delete', 'CitifundnamesController@destroy');
 Route::resource('rdct_fundnames', 'CitifundnamesController');
 
+Route::get('rdct_prices/{rdct_price}/delete', 'CitipricesController@destroy');
+Route::resource('rdct_prices', 'CitipricesController');
+
 Auth::routes(['verify' => true]);
