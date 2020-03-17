@@ -14,14 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')
-->name('home');
+  ->name('home');
 
 Route::prefix('dashboard')
   ->namespace('Admin')
   ->middleware('auth')
-  ->group(function() {
+  ->group(function () {
     Route::get('/', 'DashboardController@index')
       ->name('dashboard');
-});
+  });
 
+Route::get('rdct_fundmanagers/{rdct_fundmanager}/delete', 'CitifundmanagersController@destroy');
+Route::resource('rdct_fundmanagers', 'CitifundmanagersController');
 Auth::routes(['verify' => true]);
