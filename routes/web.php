@@ -26,4 +26,8 @@ Route::prefix('dashboard')
 
 Route::get('rdct_fundmanagers/{rdct_fundmanager}/delete', 'CitifundmanagersController@destroy');
 Route::resource('rdct_fundmanagers', 'CitifundmanagersController');
+
+Route::get('rdct_fundnames/{rdct_fundname}/delete', 'CitifundnamesController@destroy');
+Route::resource('rdct_fundnames', 'CitifundnamesController');
+
 Auth::routes(['verify' => true]);
