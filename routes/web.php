@@ -46,5 +46,8 @@ Route::get('/invoices/{rdct_invoice}/print', 'CitiinvoicesController@print');
 Route::get('waki_prices/{waki_price}/delete', 'WakipricesController@destroy');
 Route::resource('waki_prices', 'WakipricesController');
 
+Route::resource('waki_invoices', 'WakiinvoicesController');
+Route::post('/waki_invoices/{waki_invoice}/', 'WakiinvoicesController@update');
+Route::get('/waki_invoices/{waki_invoice}/print', 'WakiinvoicesController@print');
 
 Auth::routes(['verify' => true]);
