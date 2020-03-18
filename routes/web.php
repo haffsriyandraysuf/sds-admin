@@ -24,6 +24,7 @@ Route::prefix('dashboard')
       ->name('dashboard');
   });
 
+// ROUTE REKSADANA
 Route::get('/mastertemplates', 'CitimasterController@index');
 
 Route::get('rdct_fundmanagers/{rdct_fundmanager}/delete', 'CitifundmanagersController@destroy');
@@ -40,6 +41,10 @@ Route::get('/invoices/create/{rdct_fundname}', 'CitiinvoicesController@create');
 Route::post('/invoices', 'CitiinvoicesController@store');
 Route::post('/invoices/{rdct_invoice}/', 'CitiinvoicesController@update');
 Route::get('/invoices/{rdct_invoice}/print', 'CitiinvoicesController@print');
+
+// ROUTE LABEL WAKI
+Route::get('waki_prices/{waki_price}/delete', 'WakipricesController@destroy');
+Route::resource('waki_prices', 'WakipricesController');
 
 
 Auth::routes(['verify' => true]);
