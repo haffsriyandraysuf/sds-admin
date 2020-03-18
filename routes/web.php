@@ -35,4 +35,11 @@ Route::resource('rdct_fundnames', 'CitifundnamesController');
 Route::get('rdct_prices/{rdct_price}/delete', 'CitipricesController@destroy');
 Route::resource('rdct_prices', 'CitipricesController');
 
+Route::get('/invoices', 'CitiinvoicesController@index');
+Route::get('/invoices/create/{rdct_fundname}', 'CitiinvoicesController@create');
+Route::post('/invoices', 'CitiinvoicesController@store');
+Route::post('/invoices/{rdct_invoice}/', 'CitiinvoicesController@update');
+Route::get('/invoices/{rdct_invoice}/print', 'CitiinvoicesController@print');
+
+
 Auth::routes(['verify' => true]);
