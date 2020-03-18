@@ -50,4 +50,8 @@ Route::resource('waki_invoices', 'WakiinvoicesController');
 Route::post('/waki_invoices/{waki_invoice}/', 'WakiinvoicesController@update');
 Route::get('/waki_invoices/{waki_invoice}/print', 'WakiinvoicesController@print');
 
+// ROUTE BHI
+Route::resource('bhi_prices', 'BhipricesController');
+Route::get('bhi_prices/{bhi_price}/delete', 'BhipricesController@destroy');
+
 Auth::routes(['verify' => true]);
