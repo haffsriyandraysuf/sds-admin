@@ -3,7 +3,7 @@
 @section('title', "Master Template")
 
 @push('addon-style')
-<link rel="stylesheet" href="{{ url('backend/vendor/datatables/dataTables.bootstrap4.css') }}">    
+<link rel="stylesheet" href="{{ url('backend/datatables/dataTables.bootstrap4.css') }}">    
 @endpush
 
 @section('content')
@@ -57,9 +57,9 @@
 
 @push('addon-script')
 <!-- DataTables JavaScript-->
-<script src="{{ url('backend/vendor/datatables/jquery.dataTables.js') }}"></script>
-<script src="{{ url('backend/vendor/datatables/dataTables.bootstrap4.js') }}"></script>
+<script src="{{ url('backend/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ url('backend/datatables/dataTables.bootstrap4.js') }}"></script>
 
 <!-- Page level custom scripts -->
-<script src="{{ url('backend/js/demo/datatables-demo.js') }}"></script>
+<script src="{{ url('backend/datatables/datatables-demo.js') }}"></script>
 @endpush
